@@ -17,8 +17,7 @@ jobs:
 
       - name: Build APK
         run: |
-          # تهيئة Buildozer بدون مشاكل التراخيص
-          echo y | buildozer init
+          # لا تستخدم buildozer init لأن الملف موجود بالفعل
           buildozer android debug
 
       - name: Upload APK
