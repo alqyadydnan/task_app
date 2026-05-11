@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: kivy/buildozer:v1.4.0
+      image: kivy/buildozer:latest
 
     steps:
       - name: Checkout
@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: taskmanager-apk
-          path: /home/user/hostcwd/bin/*.apk
+          path: ./bin/*.apk
